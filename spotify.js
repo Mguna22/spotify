@@ -7,9 +7,11 @@ let b2 = document.querySelector('.d2l')
 let b3 = document.querySelector('.d3l')
 let b4 = document.querySelector('.d4l')
 let c1 = document.querySelector('.b3h1')
+let h1 = document.querySelector('h1b3')
 let c2 = document.querySelector('.b3h2')
 let c3 = document.querySelector('.b3h3')
 let c4 = document.querySelector('.b3h4')
+
 
 a1.addEventListener(('mouseover'),()=>{
     a1.style.background = 'rgb(242,242,242)'
@@ -48,4 +50,29 @@ a4.addEventListener(('mouseover'),()=>{
 a4.addEventListener(('mouseout'),()=>{
     a4.style.background = 'initial'
     b4.style.textDecoration = 'initial'
+})
+
+a1.addEventListener('click',()=>{
+    c1.style.display = 'block'
+})
+a1.addEventListener('dblclick',()=>{
+    c1.style.display = 'none'
+})
+a2.addEventListener('click',()=>{
+    c2.style.display = 'block'
+})
+a2.addEventListener('dblclick',()=>{
+    c2.style.display = 'none'
+})
+a3.addEventListener('click',()=>{
+    c3.style.display = 'block'
+})
+a3.addEventListener('dblclick',()=>{
+    c3.style.display = 'none'
+})
+a4.addEventListener('click',()=>{
+    c4.style.display = 'block'
+})
+a4.addEventListener('dblclick',()=>{
+    c4.style.display = 'none'
 })
